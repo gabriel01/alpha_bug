@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="#FF0000"
+    android:clipChildren="false"
+    tools:context="de.binosys.alpha_bug.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/child1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"
+        android:alpha="1"
+        android:background="#00FF00"
+        android:clipChildren="false">
+
+        <FrameLayout
+            android:id="@+id/child2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="50dp"
+            android:background="#0000FF"
+            android:alpha="1"
+            android:clipChildren="false">
+
+
+            <FrameLayout
+                android:id="@+id/child3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="50dp"
+                android:background="#00FFFF"
+                android:alpha="1"
+                android:clipChildren="false">
+
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>
